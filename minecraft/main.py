@@ -8,7 +8,7 @@ from aiogram.enums import ParseMode
 from mcrcon import MCRcon
 
 
-api_token = '7748594587:AAELGlprPiNrxZOCBBjwnladpctwDWW4P5w'
+api_token = '...'
 rcon_ip = 'localhost'
 rcon_port = 25575
 rcon_password = '12345'
