@@ -119,7 +119,7 @@ async def spawn_creeper(message: types.Message):
 
     if user_id in cooldowns and (current_time - cooldowns[user_id]) < cooldown_time:
         left = int(cooldown_time - (current_time - cooldowns[user_id]))
-        return await message.answer(f"⏰ Почекай ще {left} сек.")
+        return await message.answer(f"⏰ Подожди ещё {left} сек.")
 
     args = message.text.split()
     if len(args) < 2:
@@ -127,7 +127,7 @@ async def spawn_creeper(message: types.Message):
 
     player = args[1]
     if not checkNickname(player):
-        return await message.answer("❌ Селектори заборонені!")
+        return await message.answer("❌ Селекторы запрещены!")
     
     cmd_creeper = f"execute at {player} run summon creeper ~ ~ ~ {{ExplosionRadius:0b, Fuse:30,ignited:1b}}"
     
