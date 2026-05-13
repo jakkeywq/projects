@@ -8,7 +8,7 @@ print('[Bot] ТГ-бот працює...')
 
 async def main():
 
-    bot = Bot(token='7748594587:AAELGlprPiNrxZOCBBjwnladpctwDWW4P5w')
+    bot = Bot(token='...')
     dp = Dispatcher()
 
     dp.include_router(router)
